@@ -1,0 +1,166 @@
+:root {
+  /* Основна палітра */
+  --dust-grey: #dad7cd;
+  --dry-sage: #818f69;
+  --lime: #e8ece0;
+  --light-lime: #ebede6;
+  --fern: #588157;
+  --hunter-green: #3a5a40;
+  --pine-teal: #344e41;
+
+  /* Доповнюючі кольори */
+  --pearl-white: #f8f9f4;
+  --sand: #ffe5d9;
+  --soft-sand: #e6d9c5;
+  --mist-blue: #b7c9c3;
+  --slate-ink: #2f3e46;
+  --copper-glow: #ab7549;
+  --copper-glow-dark: #846042;
+
+  /* Розширення палітри */
+  --warm-clay: #c2a583; /* для фону або карток */
+  --cool-stone: #8d99ae; /* для бордюрів, іконок */
+  --sunlight-yellow: #f4e1a1; /* для акцентів, сповіщень */
+  --soft-rose: #d8a7a7; /* для помилок або попереджень */
+  --deep-ink: #1d1f20; /* для темного тексту або футера */
+  --light-mint: #dbead3; /* для hover-ефектів або підсвітки */
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Raleway", sans-serif;
+  --font-button: "Montserrat", sans-serif;
+  --font-logo: "Cinzel", serif;
+
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-large: 20px;
+  --font-size-h1: 36px;
+  --font-size-h2: 28px;
+  --font-size-h3: 22px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+.header-top-section{
+  background-color: var(--sand);
+}
+
+.top-header {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;  
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header-contact-title {
+  color: var(--pine-teal);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-tell {
+  color: var(--copper-glow);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-email {
+  color: var(--copper-glow);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-email:hover,
+.header-tell:hover{
+    color: var(--copper-glow-dark);
+}
+
+.header-logo {
+  width: 160px;
+  height: 160px;
+}
+
+.header-work-time {
+  line-height: 16px;
+  white-space: pre-line;
+  color: var(--copper-glow);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-bottom-section{
+    background-color: var(--fern);    
+}
+
+.bottom-header{
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list{
+    display: flex;
+    gap: 32px;
+}
+
+.header-nav-link{
+    color: var(--sand);
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-button);
+}
+
+.header-nav-link:hover{
+    border-bottom: 2px solid var(--sand);
+    padding-bottom: 2px;
+    transition: padding-bottom 0.2s ease;
+}
+
+.lang-switch{
+    display: flex;
+}
+
+.lang{
+    border: 1px solid var(--sand);
+    padding: 12px;
+    width: 64px;
+    text-align: center;
+    color: var(--sand);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+    background-color: transparent;
+}
+
+.lang-selected{
+    background-color: var(--sand);
+    padding: 12px;
+    width: 64px;
+    text-align: center;
+    color: var(--fern);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+}
+
+.ukrainian{
+    border-radius: 8px 0 0 8px;
+    
+}
+
+.english{
+    border-radius: 0 8px 8px 0;
+}

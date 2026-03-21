@@ -1,0 +1,312 @@
+:root {
+  /* Основна палітра */
+  --dust-grey: #dad7cd;
+  --dry-sage: #818f69;
+  --lime: #e8ece0;
+  --light-lime: #ebede6;
+  --fern: #588157;
+  --hunter-green: #3a5a40;
+  --pine-teal: #344e41;
+
+  /* Доповнюючі кольори */
+  --pearl-white: #f8f9f4;
+  --sand: #ffe5d9;
+  --soft-sand: #e6d9c5;
+  --mist-blue: #b7c9c3;
+  --slate-ink: #2f3e46;
+  --copper-glow: #ab7549;
+  --copper-glow-dark: #846042;
+
+  /* Розширення палітри */
+  --warm-clay: #c2a583; /* для фону або карток */
+  --cool-stone: #8d99ae; /* для бордюрів, іконок */
+  --sunlight-yellow: #f4e1a1; /* для акцентів, сповіщень */
+  --soft-rose: #d8a7a7; /* для помилок або попереджень */
+  --deep-ink: #1d1f20; /* для темного тексту або футера */
+  --light-mint: #dbead3; /* для hover-ефектів або підсвітки */
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Raleway", sans-serif;
+  --font-button: "Montserrat", sans-serif;
+  --font-logo: "Cinzel", serif;
+
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-large: 20px;
+  --font-size-h1: 36px;
+  --font-size-h2: 28px;
+  --font-size-h3: 22px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+.header-top-section{
+  background-color: var(--sand);
+}
+
+.top-header {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;  
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header-contact-title {
+  color: var(--pine-teal);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-tell {
+  color: var(--copper-glow);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-email {
+  color: var(--copper-glow);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-email:hover,
+.header-tell:hover{
+    color: var(--copper-glow-dark);
+}
+
+.header-logo {
+  width: 160px;
+  height: 160px;
+}
+
+.header-work-time {
+  line-height: 16px;
+  white-space: pre-line;
+  color: var(--copper-glow);
+  font-family: var(--font-accent);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-middle-section{
+    background-color: var(--dry-sage);
+    border-bottom: 1px solid var(--hunter-green);
+    border-top: 1px solid var(--hunter-green);
+}
+
+.header-middle{    
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-subtitle{
+    font-size: var(--font-size-medium);
+    color: var(--lime);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 8px;
+}
+
+.header-title{
+    margin: 0;
+    font-size: 48px;
+    color: var(--light-lime);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 16px;
+}
+
+.header-paragraph{
+    font-size: var(--font-size-large);
+    color: var(--lime);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 64px;
+}
+
+.header-socials {
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-link:hover {  
+  color: var(--sunlight-yellow);
+}
+
+.middle-header-img-wrap{
+    width: 50%;    
+}
+
+.middle-header-img{
+    border-radius: 12px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.7);
+    width: 560px;
+    height: 370px;
+}
+
+.header-bottom-section{
+    background-color: var(--sand);
+}
+
+.bottom-header{
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list{
+    display: flex;
+    gap: 32px;
+}
+
+.header-nav-link{
+    color: var(--fern);
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-button);
+}
+
+.header-nav-link:hover{
+    border-bottom: 2px solid var(--fern);
+    padding-bottom: 2px;
+    transition: padding-bottom 0.2s ease;
+}
+
+.lang-switch{
+    display: flex;
+}
+
+.lang{
+    border: 1px solid var(--fern);
+    padding: 12px;
+    width: 64px;
+    text-align: center;
+    color: var(--fern);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+    background-color: transparent;
+}
+
+.lang-selected{
+    background-color: var(--fern);
+    padding: 12px;
+    width: 64px;
+    text-align: center;
+    color: var(--pearl-white);
+    font-family: var(--font-accent);
+    font-weight: var(--font-weight-medium);
+}
+
+.ukrainian{
+    border-radius: 8px 0 0 8px;
+    
+}
+
+.english{
+    border-radius: 0 8px 8px 0;
+}
+
+.about{
+    background-color: var(--pearl-white);
+    padding: 36px 0;    
+}
+
+.about-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-img{
+    width: 560px;
+    height: 370px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.7);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-title{
+    margin-bottom: 20px;
+    font-size: var(--font-size-h1);
+    font-family: var(--font-body);
+    color: var(--pine-teal);
+}
+
+.about-paragraph{
+    width: 482px;
+    font-size: var(--font-size-medium);
+    font-family: var(--font-accent);
+    color: var(--pine-teal);
+    line-height: 25px;
+}
+
+.services{
+    padding: 36px 0;
+    background-color: var(--sand);
+}
+
+.services-title{
+    text-align: center;
+    font-size: var(--font-size-h1);
+    font-family: var(--font-body);
+    color: var(--pine-teal);
+    margin-bottom: 36px;
+}
+
+.services-list{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-item{
+    width: 290px;
+    padding: 24px;
+    border: 2px solid var(--fern);
+    border-radius: 12px;
+    background-color: var(--pearl-white);
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.services-link{
+    font-size: var(--font-size-medium);
+    font-family: var(--font-accent);
+    color: var(--pine-teal);
+    line-height: 25px;
+    font-weight: var(--font-weight-medium);
+}
+
+.services-item:hover{
+    position: relative;
+    bottom: 10px;
+}
