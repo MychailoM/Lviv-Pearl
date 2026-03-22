@@ -69,7 +69,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    </head>
+  </head>
   <body>
     <header class="header">
       <div class="header-top-section">
@@ -136,13 +136,15 @@
                 <a href="#services" class="header-nav-link">Послуги</a>
               </li>
               <li class="header-nav-item">
-                <a href="./pages/ua-prices.html" class="header-nav-link">Ціни</a>
+                <a href="./pages/ua-prices.html" class="header-nav-link"
+                  >Ціни</a
+                >
               </li>
               <li class="header-nav-item">
-                <a href="#" class="header-nav-link">Відгуки</a>
+                <a href="#reviews" class="header-nav-link">Відгуки</a>
               </li>
               <li class="header-nav-item">
-                <a href="#" class="header-nav-link">Контакти</a>
+                <a href="#contacts" class="header-nav-link">Контакти</a>
               </li>
             </ul>
             <div class="lang-switch">
@@ -191,43 +193,204 @@
 
           <ul class="services-list">
             <li class="services-item">
-              <a class="services-link" href="#apartments"
+              <a class="services-link" href="./pages/apartments.html"
                 >Квартири, будинки та орендоване житло</a
               >
             </li>
             <li class="services-item">
-              <a class="services-link" href="#offices"
+              <a class="services-link" href="./pages/office.html"
                 >Офіси, комерційні та громадські приміщення</a
               >
             </li>
             <li class="services-item">
-              <a class="services-link" href="#general"
+              <a class="services-link" href="./pages/general.html"
                 >Генеральне та регулярне прибирання</a
               >
             </li>
             <li class="services-item">
-              <a class="services-link" href="#postrepair"
+              <a class="services-link" href="./pages/postrepair.html"
                 >Прибирання після ремонту та заходів</a
               >
             </li>
             <li class="services-item">
-              <a class="services-link" href="#chemclean"
+              <a class="services-link" href="./pages/chemclean.html"
                 >Хімчистка меблів і килимів</a
               >
             </li>
             <li class="services-item">
-              <a class="services-link" href="#windows"
+              <a class="services-link" href="./pages/windows.html"
                 >Миття вікон, фасадів і балконів</a
               >
             </li>
           </ul>
+          <button type="button" class="order-service order-service-s">
+            Замовити послугу
+          </button>
         </div>
       </section>
-      <section class="workers">
-        
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2 class="review-title">Відгуки</h2>
+          <div class="carousel">
+            <div class="slides" id="slides">
+              <div class="slide">
+                <h3 class="review-author">Оля</h3>
+                <p class="review-text">
+                  "Чудовий сервіс! Все швидко та якісно."
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Ігор</h3>
+                <p class="review-text">
+                  "Команда дуже професійна, рекомендую!"
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Марта</h3>
+                <p class="review-text">
+                  "Залишилась задоволена результатом, буду звертатись ще."
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Олена</h3>
+                <p class="review-text">
+                  "Замовляла генеральне прибирання квартири — все блищить, дуже
+                  задоволена!"
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Іван</h3>
+                <p class="review-text">
+                  "Прибирали офіс після ремонту. Швидко, якісно, без зайвих
+                  питань."
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Марія</h3>
+                <p class="review-text">
+                  "Дівчата приїхали вчасно, зробили все акуратно. Рекомендую!"
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Василь</h3>
+                <p class="review-text">
+                  "Замовляв миття вікон у приватному будинку. Робота виконана на
+                  відмінно."
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Світлана</h3>
+                <p class="review-text">
+                  "Після свят квартира була в жахливому стані, але клінери все
+                  швидко навели до ладу."
+                </p>
+              </div>
+              <div class="slide">
+                <h3 class="review-author">Андрій</h3>
+                <p class="review-text">
+                  "Ціни адекватні, сервіс на високому рівні. Буду звертатись
+                  ще."
+                </p>
+              </div>
+            </div>
+            <div class="controls">
+              <button class="prevSlide control-btn">Назад</button>
+              <span class="reviews-num"></span>
+              <button class="nextSlide control-btn">Вперед</button>
+            </div>
+          </div>
+          <button type="button" class="add-review">Залишити відгук</button>
+        </div>
       </section>
-
-      
     </main>
+    <footer id="contacts" class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-logo-wrap">
+            <img class="footer-logo" src="./images/white-logo.png" alt="logo" />
+            <button type="button" class="order-service order-service-footer">
+              Замовити послугу
+            </button>
+          </div>
+
+          <div class="footer-nav-wrap">
+            <h2 class="footer-title">Навігація</h2>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="#about" class="footer-nav-link">Про нас</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#services" class="footer-nav-link">Послуги</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="./pages/ua-prices.html" class="footer-nav-link"
+                  >Ціни</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a href="#reviews" class="footer-nav-link">Відгуки</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#contacts" class="footer-nav-link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-wrap">
+            <h2 class="footer-title">Контакти</h2>
+            <div class="footer-contacts-wrap">
+              <a href="tell: 3808888888" class="footer-tell">+380-888-88-88</a>
+              <a href="mailto:lvivpearl@gmail.com" class="footer-email"
+                >lvivpearl@gmail.com</a
+              >
+              <span class="footer-work-time">
+                Пн-Пт 08:15 – 20:00, <br />
+                СБ: 9:00 – 17:00
+              </span>
+              <span class="footer-adress">
+                вул. Червоної Калини, 85, м. Львів, Сихівський район, 79049
+              </span>
+              <div class="footer-socials">
+                <a href="https://facebook.com/yourpage" class="social-link"
+                  >Facebook</a
+                >
+                <a href="https://instagram.com/yourpage" class="social-link"
+                  >Instagram</a
+                >
+                <a href="https://t.me/yourpage" class="social-link">Telegram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.6366911565256!2d24.05687857673749!3d49.79289673449041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae86c8af6291b%3A0xdb69d673e8d90758!2z0L_RgNC-0YHQv9C10LrRgiDQp9C10YDQstC-0L3QvtGXINCa0LDQu9C40L3QuCwgODUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1774193496624!5m2!1suk!2sua"
+              width="270"
+              height="320"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="footer-map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="order-form-wrap hidden">
+      <button type="button" class="close-form">Close</button>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe1mQTAR-K-EsSN5d3gqMfGwmK7eOtqcThb_6qUosXp6EMvlQ/viewform?embedded=true"
+        width="640"
+        height="480"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Завантаження…</iframe
+      >      
+    </div>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>

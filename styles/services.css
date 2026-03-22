@@ -165,87 +165,161 @@
     border-radius: 0 8px 8px 0;
 }
 
-.prices-section {
+/* Заголовок сторінки */
+.page-title {
+  text-align: center;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  margin: 40px 0 20px;
+  color: var(--pine-teal);
+  font-family: var(--font-heading);
+}
+
+/* Секція послуги */
+.service-detail {
   background: var(--pearl-white);
   padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   margin-bottom: 40px;
 }
 
-.prices-title {
-  font-size: var(--font-size-h2);
-  font-family: var(--font-heading);
-  color: var(--pine-teal);
-  text-align: center;
-  margin-bottom: 20px;
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
 }
 
-.prices-description {
-  font-size: var(--font-size-base);
+.service-text {
+  flex: 1 1 50%;
+}
+
+.service-title {
+  font-size: var(--font-size-h2);
+  margin-bottom: 15px;
+  color: var(--hunter-green);
+  font-family: var(--font-heading);
+}
+
+.service-description {
+  line-height: 1.6;
+  margin-bottom: 20px;
   font-family: var(--font-body);
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: var(--font-size-base);
   color: var(--slate-ink);
 }
 
-.prices-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
+.service-benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-.prices-header {
-  background: var(--fern);
-  color: var(--pearl-white);
-}
-
-.prices-col-title,
-.prices-col-price {
-  padding: 12px;
-  font-family: var(--font-accent);
-  font-size: var(--font-size-medium);
-  text-align: left;
-}
-
-.prices-row:nth-child(even) {
-  background: var(--light-lime);
-}
-
-.prices-row:nth-child(odd) {
-  background: var(--lime);
-}
-
-.prices-item,
-.prices-value {
-  padding: 12px;
+.service-benefit {
+  margin-bottom: 10px;
+  padding-left: 24px;
+  position: relative;
   font-family: var(--font-body);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-medium);
   color: var(--deep-ink);
 }
 
-.prices-value {
-  font-weight: var(--font-weight-medium);
-  text-align: right;
+.service-benefit::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--fern);
+  font-weight: var(--font-weight-bold);
 }
 
-.prices-button {
-  display: block;
-  margin: 0 auto;
+/* Кнопка */
+.service-button {
   background: var(--fern);
   color: var(--pearl-white);
   border: none;
   padding: 12px 25px;
   font-size: var(--font-size-medium);
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   font-family: var(--font-button);
   font-weight: var(--font-weight-medium);
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.prices-button:hover {
+.service-button:hover {
   background: var(--hunter-green);
+  transform: scale(1.05);
+}
+
+/* Зображення */
+.service-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.service-img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Відгуки */
+.reviews {
+  background: var(--pearl-white);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.reviews-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--pine-teal);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 4px solid var(--fern);
+  background: var(--light-lime);
+  border-radius: 6px;
+}
+
+.review-text {
+  margin: 0 0 10px;
+  font-style: italic;
+  font-family: var(--font-body);
+  color: var(--slate-ink);
+}
+
+.review-author {
+  font-size: var(--font-size-small);
+  color: var(--copper-glow-dark);
+  font-family: var(--font-accent);
+}
+
+/* Футер */
+.footer {
+  background: var(--deep-ink);
+  color: var(--pearl-white);
+  text-align: center;
+  padding: 20px;
+  font-family: var(--font-body);
+}
+
+.footer p {
+  margin: 0;
+  font-size: var(--font-size-small);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+  }
 }
 
 .footer {
@@ -359,4 +433,3 @@
     border-radius: 12px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.7);
 }
-
